@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.env
+.venv
+venv/
+ENV/
+env/
+*.sav
+*.pkl
+*.joblib
+diabetes.csv
+test_api.py
+frontend.html
