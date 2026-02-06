@@ -1,9 +1,6 @@
 services:
   - type: web
-    name: diabetes-api-new
+    name: diabetes-api-version2
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn ML_api:app --host 0.0.0.0 --port $PORT
-    envVars:
-      - key: PYTHON_VERSION
-        value: 3.9.0
+    startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
