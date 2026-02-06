@@ -1,6 +1,7 @@
 services:
   - type: web
-    name: diabetes-api-version2
-    env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
+    name: diabetes-api-docker
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: true
